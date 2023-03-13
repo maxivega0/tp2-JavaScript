@@ -7,3 +7,17 @@
 //* 333
 //* 22
 //* 1
+
+let contador = 0;
+let impresiones = parseInt(prompt("ingrese el numero base de la piramide"))
+let numero = impresiones;
+while (impresiones >= 0) {
+    while (contador < impresiones) {
+        document.write(`${numero} `);
+        contador++;
+    }
+    document.write("<br>")
+    numero--;
+    impresiones--;
+    contador = 0;
+}

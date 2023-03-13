@@ -12,7 +12,7 @@ let impresiones = 1;
 let numero = 1;
 while (impresiones <= 30) {
     while (contador < impresiones) {
-        document.write(`${numero}`);
+        document.write(`${numero} `);
         contador++;
     }
     document.write("<br>")
