@@ -11,13 +11,17 @@
 let contador = 0;
 let impresiones = parseInt(prompt("ingrese el numero base de la piramide"))
 let numero = impresiones;
-while (impresiones >= 0) {
-    while (contador < impresiones) {
-        document.write(`${numero} `);
-        contador++;
+do{if (impresiones <= 50) {
+    while (impresiones >= 0) {
+        while (contador < impresiones) {
+            document.write(`${numero} `);
+            contador++;
+        }
+        document.write("<br>")
+        numero--;
+        impresiones--;
+        contador = 0;
     }
-    document.write("<br>")
-    numero--;
-    impresiones--;
-    contador = 0;
 }
+
+}while(confirm("Desea volver a ejecutar el programa?"))
