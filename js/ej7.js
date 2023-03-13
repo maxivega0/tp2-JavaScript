@@ -9,9 +9,13 @@
 //* 1
 
 let contador = 0;
+let bandera = false;
 let impresiones = parseInt(prompt("ingrese el numero base de la piramide"))
 let numero = impresiones;
-do{if (impresiones <= 50) {
+do{
+    let impresiones = parseInt(prompt("ingrese el numero base de la piramide"))
+    let numero = impresiones;
+    if (impresiones <= 50 && impresiones > 0) {
     while (impresiones >= 0) {
         while (contador < impresiones) {
             document.write(`${numero} `);
@@ -21,7 +25,8 @@ do{if (impresiones <= 50) {
         numero--;
         impresiones--;
         contador = 0;
+        bandera = true
     }
 }
 
-}while(confirm("Desea volver a ejecutar el programa?"))
+}while (bandera === false);
