@@ -2,7 +2,7 @@
 
  let cadena = prompt("Escriba una frase.");
     document.write(`${cadena}`);
-while(confirm("¿Quiere seguir escribiendo?") == true){
+while(confirm("¿Quiere seguir escribiendo?")){
     cadena = prompt("Escriba una nueva frase.");
     document.write(` - ${cadena}`);
 }
