@@ -9,15 +9,24 @@
 //* 1
 
 let contador = 0;
+let bandera = false;
 let impresiones = parseInt(prompt("ingrese el numero base de la piramide"))
 let numero = impresiones;
-while (impresiones >= 0) {
-    while (contador < impresiones) {
-        document.write(`${numero} `);
-        contador++;
+do{
+    let impresiones = parseInt(prompt("ingrese el numero base de la piramide"))
+    let numero = impresiones;
+    if (impresiones <= 50 && impresiones > 0) {
+    while (impresiones >= 0) {
+        while (contador < impresiones) {
+            document.write(`${numero} `);
+            contador++;
+        }
+        document.write("<br>")
+        numero--;
+        impresiones--;
+        contador = 0;
+        bandera = true
     }
-    document.write("<br>")
-    numero--;
-    impresiones--;
-    contador = 0;
 }
+
+}while (bandera === false);
