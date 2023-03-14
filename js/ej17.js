@@ -7,5 +7,8 @@ for (i = 0; i < frase.length && bandera === false; i++) {
     if (frase.charAt(i) === "a" || frase.charAt(i) === "e" || frase.charAt(i) === "i" || frase.charAt(i) === "o" || frase.charAt(i) === "u") {
     document.write(`<h1>La primera vocal se encuentra en la posicion: ${i+1}.</h1>`);
     bandera = true;
+    }else{
+        alert("No ha ingresado ninguna vocal en su frase.");
+        i = frase.length;
     }
     }
