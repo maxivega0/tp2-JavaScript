@@ -7,4 +7,16 @@
 //* 55555
 //* 666666
 //* …….
-
+let contador = 0;
+let impresiones = 1;
+let numero = 1;
+while (impresiones <= 30) {
+    while (contador < impresiones) {
+        document.write(`${numero} `);
+        contador++;
+    }
+    document.write("<br>")
+    numero++;
+    impresiones++;
+    contador = 0;
+}
